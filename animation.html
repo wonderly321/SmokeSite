@@ -57,15 +57,21 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <span class="navbar-brand mb-0 h1">Animation</span>
         </nav>
-        <div class="form-group">
-            <label for="img">Input image</label>
-            <input id="input-44" name="input-dim-2[]" multiple type="file" accept="image/*">
-        </div>
+        <!-- <div class="form-group"> -->
+            
+        <!-- </div> -->
         <br>
         <div class="row"> 
-            <form class="col">               
+            <div class="col">
+
+            <form>               
                 <div class="form-group">
-                    <label for="RGB">Color choice</label>
+                    <div style="position: absolute; top: 0px; width: 200%;">
+                        <label for="img">Input image</label>
+                        <input id="input-44" name="input-dim-2[]" multiple type="file" accept="image/*">
+                    </div>
+                    <div style="margin-top: 400px">
+                        <label for="RGB">Color choice</label>
                     <p>
                         <input name="R" type="text" class="span2" value="" data-slider-min="0" data-slider-max="255"
                             data-slider-step="1" data-slider-value="128" data-slider-id="RC" id="R"
@@ -85,6 +91,7 @@
                         <span id="BL" class="badge badge-light">128</span>
                     </p>
                     <div id="RGB" class="span2" style="width:100%"></div>
+                    </div>
                 </div>
                 <br>
                 <div class="form-group">
@@ -99,13 +106,17 @@
                 <br>
                 <button type="submit" class="card-img-bottom btn btn-success">Submit</button>
             </form>
+        </div>
             <br>
             <div class="col">
-                <video class="card-img-top" controls>
-                    <source src="source/real.mp4" type="video/mp4">
-                </video>
-                <br>
-                <a href="#" class="card-img-bottom btn btn-info">Download</a>
+                <div style="margin-top: 400px">
+                    <video class="card-img-top" controls>
+                        <source src="source/real.mp4" type="video/mp4">
+                    </video>
+                    <br>
+                    <a href="#" class="card-img-bottom btn btn-info">Download</a>
+                </div>
+                
             </div>
         </div>
     </div>
